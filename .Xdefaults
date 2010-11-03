@@ -1,0 +1,16 @@
+Xterm*font: -*-dejavu sans mono-bold-r-normal-*-17-*-*-*-*-*-*-u
+Xterm*faceName: Terminus:pixelsize=12
+XTerm*background: black
+XTerm*foreground: grey
+XTerm*termName: xterm-256color
+XTerm*cursorColor: grey
+XTerm*transparent: false
+XTerm*tintColor: black
+XTerm*shading: 70
+XTerm*scrollBar: false
+XTerm*cursorBlink: true
+XTerm*pointerBlank: true
+XTerm*pointerBlankDelay: 13
+urxvt*termName rxvt-unicode
+urxvt*foreground:       #bbbbbb
+urxvt*background:       #000000
