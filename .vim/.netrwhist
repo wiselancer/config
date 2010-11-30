@@ -1,7 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/usr/etc/bash_completion.d'
-let g:netrw_dirhist_2='/etc'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/sam'
+let g:netrw_dirhist_2='/home/sam/100realty.dev/public_html/sites/100realty.dev/modules/_custom/realty_objects'
 let g:netrw_dirhist_3='/etc/X11/xorg.conf.d'
-let g:netrw_dirhist_4='/home/sam/.vim'
-let g:netrw_dirhist_5='/home/sam/important/myvim/.vim'
+let g:netrw_dirhist_4='/home/sam/100realty.dev/public_html/sites/100realty.dev/modules/_custom/maps_realty/js'
