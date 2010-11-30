@@ -10,6 +10,10 @@
 " line enables syntax highlighting by default.
 syntax on
 
+
+set autoindent
+set smartindent
+
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 set background=dark
@@ -49,21 +53,15 @@ au BufNewFile,BufRead *.install set filetype=php
 au BufNewFile,BufRead *.inc set filetype=php
 
 
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType inc set omnifunc=phpcomplete#CompletePHP
+" autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+" autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" autocmd FileType inc set omnifunc=phpcomplete#CompletePHP
 
 
-set tags=./tags;/var/www
-
-if &diff
-  set background=dark
-  colorscheme peaksea
-endif
-
+" set tags=./tags;/var/www
 
 " custom keybinginds (left key press perform the right key commands)
 
@@ -74,25 +72,26 @@ noremap F zM
 " Open all folds
 noremap ,f zR
 
-
-
  set guifont=Monaco "Sam custom - add custom font
 
  highlight Cursor guibg=Black guifg=NONE
  let g:user_zen_expandabbr_key = '<c-e>' "Sam custom - add keybin to zen_codding
- let g:user_zen_next_key = '<c-r>' "Sam custom - add keybin to zen_codding
+ let g:user_zen_next_key = '<c-space>' "Sam custom - add keybin to zen_codding
 
  set number "Sam custom - add number
 
  set tabstop=2
-  set encoding=utf-8
+ set encoding=utf-8
  set termencoding=utf-8
  colorscheme desert
- set smartindent
  set backspace=indent,eol,start
  syntax enable
  filetype on
- source ~/.vim/php-doc.vim
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+
+"Sam custom - add php-doc plugin
+source ~/.vim/plugin/php-doc.vim
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
+
+source ~/.vim/after/plugin/snipMate.vim
