@@ -4,10 +4,10 @@ alias y="yaourt"
 alias aptana="/home/sam/aptana/AptanaStudio"
 alias fl="sudo fdisk -l"
 alias v="vim"
-alias gv = "gvim"
+alias gv= "gvim"
 alias s="sudo"
 alias sv="sudo vim"
-alias sgv = "sudo gvim"
+alias sgv= "sudo gvim"
 alias v="vim"
 alias l="ls -lha --color"
 alias e="less"
@@ -37,7 +37,7 @@ export NOSE_WITH_CHERRYPYLIVESERVER=1
 
 # zgitinit and prompt_wunjo_setup must be somewhere in your $fpath, see README for more.
 setopt promptsubst
- 
+
 PS1="$(print '%{\e[1;32m%}[%T] %{\e[1;34m%}%n@%m%{\e[0m%}'):$(print '%{\e[0;34m%}%~%{\e[0m%}')$ "
 
 # The following lines were added by compinstall
