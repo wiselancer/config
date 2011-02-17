@@ -2,7 +2,7 @@ xscreensaver -no-splash &
 exec urxvtd -q -f &
 ck-launch-session blueman-applet &
 
-DEFAULT_SESSION=kde
+DEFAULT_SESSION=awesome
 
 case $1 in
 awesome)
