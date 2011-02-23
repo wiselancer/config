@@ -8,15 +8,18 @@ alias gv= "gvim"
 alias s="sudo"
 alias sv="sudo vim"
 alias sgv= "sudo gvim"
-alias v="vim"
 alias l="ls -lha --color"
 alias e="less"
 alias pg="pgrep -fl"
-alias g="git"
 alias cl="clyde"
 alias sc="sudo clyde"
-alias nl="nload -t 2000 -u K -U M"
-alias yv="youtube-viewer"
+alias gs="git status"
+alias ga="git add ."
+alias g="git"
+
+gm() {
+    git commit -am '$1'
+}
 
 c() {
     cd $1
@@ -30,7 +33,8 @@ gr() {
 bindkey -e
 
 
-PATH=$PATH:/home/sam/bin/:/opt/android-sdk/tools
+PATH=$PATH:/home/sam/bin/:/opt/android-sdk/tools:/opt/java/jre/bin/
+
 
 export EDITOR="/usr/bin/vim"
 export NOSE_WITH_CHERRYPYLIVESERVER=1
