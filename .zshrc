@@ -16,9 +16,10 @@ alias sc="sudo clyde"
 alias gs="git status"
 alias ga="git add ."
 alias g="git"
+alias gl="git log"
 
 gm() {
-    git commit -am '$1'
+    git commit -am "$1"
 }
 
 c() {
