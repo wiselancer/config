@@ -1,0 +1,31 @@
+[core]
+  excludesfile = /Users/wisemac/.gitignore
+  pager = delta
+[user]
+  name = Wiselancer
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINgKGiDU2qkg1u+ZXRtDlZDbfdb8Xn6VojGLqvzE3J1K
+	email = 310760+wiselancer@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+  required = true
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  side-by-side = true
+  # delta detects terminal colors automatically; set one of these to disable auto-detection
+  # dark = true
+  # light = true
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default
+[gpg]
+	format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  allowedSignersFile = /Users/wisemac/.gnupg/allowed_signers.txt
+[commit]
+	gpgsign = true
