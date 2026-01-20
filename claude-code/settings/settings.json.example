@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(/Users/YOUR_USERNAME/.claude/statusline-command.sh)",
+      "Bash(echo \" [exit: $?\")",
+      "WebFetch(domain:api.github.com)"
+    ],
+    "defaultMode": "default"
+  },
+  "model": "sonnet",
+  "statusLine": {
+    "type": "command",
+    "command": "/Users/YOUR_USERNAME/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "reflexion@context-engineering-kit": true,
+    "git@context-engineering-kit": true
+  }
+}

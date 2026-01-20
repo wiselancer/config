@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(/Users/YOUR_USERNAME/.claude/statusline-command.sh)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:registry.npmjs.org)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm build:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  }
+}
